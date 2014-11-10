@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-md-4">
             <p>The Wsdl for the navigation application:</p>
-            <p><a href="http://localhost:49477/Service1.svc?wsdl">http://localhost:49477/Service1.svc?wsdl</a></p>
+            <p><a href="http://localhost:49904/Service1.svc?wsdl">http://localhost:49904/Service1.svc?wsdl</a></p>
         </div>
         <div class="col-md-4">
             <p>Give the location as the input.</p>

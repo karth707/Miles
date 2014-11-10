@@ -15,7 +15,7 @@ namespace NavigationWcfService
     {
         private static String API_KEY = "AIzaSyDDZjOK5uhwbe_infKfinmjE9x26hQMUIg";
 
-        public string GetDistance(String start, String end)
+        public distance GetDistance(String start, String end)
         {
             string url = @"https://maps.googleapis.com/maps/api/distancematrix/xml?origins=" +
               start + "&destinations=" + end +
@@ -31,13 +31,16 @@ namespace NavigationWcfService
             XmlDocument xmldoc = new XmlDocument();
             xmldoc.LoadXml(responsereader);
 
+            distance d = new distance();
+            d.dist = "0 mi";
 
             if (xmldoc.GetElementsByTagName("status")[0].ChildNodes[0].InnerText == "OK")
             {
                 XmlNodeList distance = xmldoc.GetElementsByTagName("distance");
-                return distance[0].ChildNodes[1].InnerText;
+                d.dist =  distance[0].ChildNodes[1].InnerText;
+                return d;
             }
-            return "0 mi";
+            return d;
         }       
     }
 }

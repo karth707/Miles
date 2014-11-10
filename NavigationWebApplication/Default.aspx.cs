@@ -1,23 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml;
 
 namespace NavigationWebApplication
 {
     public partial class _Default : Page
     {
-        DistanceServiceReference.Service1Client distanceClient;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-            distanceClient = new DistanceServiceReference.Service1Client();
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            this.Label1.Text = distanceClient.GetDistance(this.start.Text, this.end.Text);
+            String url = @"http://localhost:49904/Service1.svc/nav?start="+ this.start.Text+"&end="+ this.end.Text;
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            WebResponse response = request.GetResponse();
+            Stream dataStream = response.GetResponseStream();
+            StreamReader sreader = new StreamReader(dataStream);
+            string responsereader = sreader.ReadToEnd();
+            response.Close();
+
+            XmlDocument xmldoc = new XmlDocument();
+            xmldoc.LoadXml(responsereader);
+            XmlNodeList dist = xmldoc.GetElementsByTagName("dist");
+            this.Label1.Text =  dist[0].InnerText;
             
         }
     }
