@@ -9,10 +9,12 @@ namespace CrimeWebApplication
 {
     public partial class _Default : Page
     {
-        CrimeServiceReference.Service1Client crimeClient;
+        //CrimeServiceReference.Service1Client crimeClient;
+        CrimeServiceReferenceRem.Service1Client crimeClient;
         protected void Page_Load(object sender, EventArgs e)
         {
-            crimeClient = new CrimeServiceReference.Service1Client();
+            //crimeClient = new CrimeServiceReference.Service1Client();
+            crimeClient = new CrimeServiceReferenceRem.Service1Client();
         }
 
         protected void Button1_Click(object sender, EventArgs e)

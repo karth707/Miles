@@ -10,11 +10,12 @@ namespace TouristSpotsWebApplication
 {
     public partial class _Default : Page
     {
-        TouristSpotsServiceReference.Service1Client touristSpotsClient;
-
+        //TouristSpotsServiceReference.Service1Client touristSpotsClient;
+        TouristSpotsServiceReferenceRem.Service1Client touristSpotsClient;
         protected void Page_Load(object sender, EventArgs e)
         {
-            touristSpotsClient = new TouristSpotsServiceReference.Service1Client();
+            //touristSpotsClient = new TouristSpotsServiceReference.Service1Client();
+            touristSpotsClient = new TouristSpotsServiceReferenceRem.Service1Client();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -34,7 +35,8 @@ namespace TouristSpotsWebApplication
                     String name = spotsXml[i].ChildNodes[0].InnerText;
                     String vicinity = spotsXml[i].ChildNodes[1].InnerText;
                     String type = spotsXml[i].ChildNodes[2].InnerText;
-                    output = output + "Tourist Spot "+ i+1 +":<br>"
+                    int spotNum = i + 1;
+                    output = output + "Tourist Spot " + spotNum + ":<br>"
                                     + "Name: " + name + "<br>"
                                     + "Vicinity: " + vicinity + "<br>"
                                     + "Type: " + type + "<br><br>";

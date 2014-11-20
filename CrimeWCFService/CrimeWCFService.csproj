@@ -59,6 +59,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\Custom.pubxml" />
+    <None Include="Properties\PublishProfiles\Custom2.pubxml" />
+    <None Include="Properties\PublishProfiles\custom3.pubxml" />
+    <None Include="Properties\PublishProfiles\Custom4.pubxml" />
     <None Include="Service References\WeatherServiceReference\configuration91.svcinfo" />
     <None Include="Service References\WeatherServiceReference\configuration.svcinfo" />
     <Content Include="Service References\WeatherServiceReference\CrimeWCFService.WeatherServiceReference.ForecastReturn.datasource">

@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-md-4">
             <p>The Wsdl for the crime data application:</p>
-            <p><a href="http://localhost:51394/Service1.svc?wsdl">http://localhost:51394/Service1.svc?wsdl</a></p>
+            <p><a href="http://10.1.11.146:10005/Service1.svc?wsdl">http://10.1.11.146:10005/Service1.svc?wsdl</a></p>
         </div>
         <div class="col-md-4">
             <p>Give the Zipcode of the location as the input.</p>

@@ -14,7 +14,7 @@ namespace TouristSpotsWcfService
     public class Service1 : IService1
     {
         private static String API_KEY = "AIzaSyDDZjOK5uhwbe_infKfinmjE9x26hQMUIg";
-        private static String RADIUS = "400";                                                       //in meters
+        private static String RADIUS = "4000";                                                       //in meters
         private static String TYPES = "museum|night_club|art_gallery|park|zoo|movie_theater";
         private static int NO_SPOTS = 10;
 

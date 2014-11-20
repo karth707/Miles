@@ -59,6 +59,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\2.pubxml" />
     <None Include="Service References\WeatherWCFService\configuration91.svcinfo" />
     <None Include="Service References\WeatherWCFService\configuration.svcinfo" />
     <None Include="Service References\WeatherWCFService\Reference.svcmap">

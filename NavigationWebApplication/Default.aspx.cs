@@ -20,7 +20,7 @@ namespace NavigationWebApplication
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            String url = @"http://localhost:49904/Service1.svc/nav?start="+ this.start.Text+"&end="+ this.end.Text;
+            String url = @"http://10.1.11.146:10021/Service1.svc/nav?start=" + this.start.Text + "&end=" + this.end.Text;
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             WebResponse response = request.GetResponse();

@@ -1,0 +1,20 @@
+Links:
+
+GeocodeSite: 		http://10.1.11.146:10009/
+CrimeSite: 		http://10.1.11.146:10011/
+WeatherSite:		http://10.1.11.146:10015/
+TouristSpotsSite: 	http://10.1.11.146:10019/
+NavigationSite: 	http://10.1.11.146:10023/
+
+Ports:
+
+GeocodeService: 	10007, FTP: 10008
+GeocodeSite: 		10009, FTP: 10010
+CrimeService: 		10005, FTP: 10006
+CrimeSite: 		10011, FTP: 10012
+WeatherService: 	10013, FTP: 10014
+WeatherSite: 		10015, FTP: 10016
+TouristSpotsService: 	10017, FTP: 10018
+TouristSpotsSite: 	10019, FTP: 10020
+NavigationService: 	10021, FTP: 10022
+NavigationSite: 	10023, FTP: 10024

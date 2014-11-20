@@ -10,10 +10,12 @@ namespace GeocodeWebApplication
 {
     public partial class _Default : Page
     {
-        GeocodeServiceReference.Service1Client geocodeClient;
+        GeocodeServiceReferenceRem.Service1Client geocodeClient;
+        //GeocodeServiceReference.Service1Client geocodeClient;
         protected void Page_Load(object sender, EventArgs e)
         {
-            geocodeClient = new GeocodeServiceReference.Service1Client();
+            //geocodeClient = new GeocodeServiceReference.Service1Client();
+            geocodeClient = new GeocodeServiceReferenceRem.Service1Client();
         }
 
         protected void Button1_Click(object sender, EventArgs e)

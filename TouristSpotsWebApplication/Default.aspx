@@ -11,7 +11,7 @@
     <div class="row">
         <div class="">
             <p>The Wsdl for the geocode data application:</p>
-            <p><a href="http://localhost:50363/Service1.svc?wsdl">http://localhost:50363/Service1.svc?wsdl</a></p>
+            <p><a href="http://10.1.11.146:10017/Service1.svc?wsdl">http://10.1.11.146:10017/Service1.svc?wsdl</a></p>
         </div>
         <div class="" style="height: 956px">
             <p>Give the location as the input.</p>

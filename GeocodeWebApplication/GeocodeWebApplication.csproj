@@ -161,6 +161,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <None Include="Properties\PublishProfiles\geocodeSite.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -194,10 +195,23 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <None Include="Service References\GeocodeServiceReferenceRem\Service1.wsdl" />
+    <None Include="Service References\GeocodeServiceReferenceRem\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GeocodeServiceReferenceRem\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\GeocodeServiceReference\Service1.disco" />
     <None Include="Service References\GeocodeServiceReference\configuration91.svcinfo" />
     <None Include="Service References\GeocodeServiceReference\configuration.svcinfo" />
     <None Include="Service References\GeocodeServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\GeocodeServiceReferenceRem\configuration91.svcinfo" />
+    <None Include="Service References\GeocodeServiceReferenceRem\configuration.svcinfo" />
+    <None Include="Service References\GeocodeServiceReferenceRem\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -273,6 +287,11 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\GeocodeServiceReferenceRem\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\GeocodeServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -308,6 +327,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GeocodeServiceReferenceRem\" />
     <WCFMetadataStorage Include="Service References\GeocodeServiceReference\" />
   </ItemGroup>
   <PropertyGroup>

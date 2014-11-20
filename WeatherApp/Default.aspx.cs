@@ -10,11 +10,13 @@ namespace WeatherApp
 {
     public partial class _Default : Page
     {
-        WeatherServiceReference.Service1Client client;
+        //WeatherServiceReference.Service1Client client;
+        WeatherServiceReferenceRem.Service1Client client;
         String zipcode;
         protected void Page_Load(object sender, EventArgs e)
         {
-            client = new WeatherServiceReference.Service1Client();
+            //client = new WeatherServiceReference.Service1Client();
+            client = new WeatherServiceReferenceRem.Service1Client();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
